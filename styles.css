@@ -1,0 +1,74 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 1rem;
+	line-height: 1.4em;
+	font-weight: normal;
+	font-style: normal;
+}
+
+main {
+	width: 90%;
+	max-width: 50rem;
+	margin: 2rem auto;
+}
+
+p {
+	margin-bottom: 3rem;
+}
+/* book a flight */
+a:link {
+	padding: 1rem;
+}
+
+a:link svg {
+	width: 2rem;
+	position: relative;
+	left: 0;
+	top: .5rem;
+	fill: blue;
+	transition: left .2s ease-out,
+				top .2s ease-out;
+				
+}
+
+a:focus, a:hover {
+	outline: none;
+	text-decoration: none;
+}
+
+a:hover svg, a:focus svg {
+	left: 1rem;
+	top: -.5rem;
+	outline: 0;
+}
+
+a:active {
+	background-color: blue;
+	color: white;
+}
+
+a:active svg {
+	fill: white;
+}
+
+/* button */
+a.button:link, a.button:visited {
+	text-decoration: none;
+	padding: 1rem;
+	background-color: black;
+	color: white;
+	border-radius: 15px;
+	display:inline-block;
+	transition: all .4s ease-in-out;
+}
+
+a.button:hover, a.button:focus {
+	background-color: #666666;
+	transform: scale(1.1);
+}
